@@ -4,7 +4,8 @@ RUN apt update -qq; \
     apt install -yq openjdk-11-jre-headless; \
     apt install -yq software-properties-common; \
     apt install -yq python3.8 ;\
-    apt install make
+    apt install -yq make; \
+    apt install -yq python3-pip ;
 
 RUN ln -s `which python3` /usr/bin/python
 RUN ln -s `which pip3` /usr/bin/pip
